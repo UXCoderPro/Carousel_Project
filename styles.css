@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 62px;
+    left: 80px;
+}
+
+footer {
+    position: absolute;
+    bottom: 62px;
+    left: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+footer .line {
+    width: 160px;
+    height: 2px;
+    border-radius: 17px;
+    background: #191919;
+}
+
+footer p {
+    color: #191919;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+}
+
+footer span {
+    font-family: "Amiri", serif;
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 40px;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    gap: 80px;
+}
+
+#main .pagination {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+#main .pagination #page {
+    display: flex;
+    width: 68px;
+    height: 68px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .pagination .page {
+    color: #191919;
+    font-family: "Public Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#main .pagination .active {
+    background: #F2EFEC;
+}
+
+#main .content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 76px;
+}
+
+#main .content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 509px;
+}
+
+#main .content .container h1 {
+    color:#191919;
+    font-family: "Amiri",serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#main .content .container p {
+    color:#191919;
+    font-family: "Public Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+
+#main .content .slider {
+    display: flex;
+    /* grid-template-columns: 427px 427px 427px 427px 427px 427px 427px 427px;
+    grid-template-rows: 100%; */
+    width: 1054px;
+    height: 427px;
+    overflow: hidden;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+    transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth easing */
+}
+
+#main .content .slider #pic {
+    flex: 0 0 auto;
+    height: 427px;
+    width: 427px;
+    background-color: blue;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.8s ease-in-out; /* Optional hover effect smoothness */
+}
+
+#main .content .slider #pic .detai {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(6.5px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px 0 24px;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#main .content .slider #pic:hover .detai {
+    transform: translateY(0);
+}
+
+
+#main .content .slider #pic .detai h1 {
+    color: #fff;
+    font-family: "Amiri", serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#main .content .slider #pic .detai p {
+    color: #fff;
+    text-align: center;
+    font-family: "Public Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#main .content .slider .img1 {
+    background-image: url(./Asset/m3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img2 {
+    background-image: url(./Asset/m4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img3 {
+    background-image: url(./Asset/m5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img4 {
+    background-image: url(./Asset/skoda.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img5 {
+    background-image: url(./Asset/polo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img6 {
+    background-image: url(./Asset/land.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img7 {
+    background-image: url(./Asset/jeep.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main .content .slider .img8 {
+    background-image: url(./Asset/toyoto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
